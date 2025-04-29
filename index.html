@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/homepage.css">
+    <title>Faladaria</title>
+</head>
+<body>
+    <div id="loading">Loading&#8230;</div>
+
+    <div id="inbox" class="column">
+        <p class="title">Conversas</p>
+        <input type="text" maxlength="15" name="username" class="searchField" placeholder="Pesquisar usuario">
+        <div id="searchContainer"></div>
+        <div class="container"></div>
+    </div>
+
+    <div id="chat" class="colunm"></div>
+    
+    <div id="profile" class="column">
+        <p class="title">Perfil</p>
+        <div class="container"></div>
+        <div class="menu">
+            <button>Sair</button>
+        </div>
+    </div>
+    <script>
+        function loadInbox() {
+
+        }
+        function loadProfile(id = 0) {
+            $.ajax({
+                url: 'process/profile.php?id='+id,
+                success: function(data){
+                    $('#profile .container').html(data)
+                },
+                error: function(error){
+                    Swal.fire({
+                        title: 'aaaaha',
+                        text: error.statusText,
+                        icon: 'error',
+                        confirmButtonText: 'Tentar novamente'
+                    })
+                }
+            })
+        }
+        function chat(id = 0){
+
+        }
+
+        $(document).ready(function(){
+            setInterval(() => {
+                loadInbox();
+            }, 3000)
+            loadProfile();
+            chat()
+        })
+    </script>
+</body>
+</html>

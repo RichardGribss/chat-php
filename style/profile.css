@@ -1,0 +1,18 @@
+#profile .menu{
+    position: absolute;
+    bottom: 0;
+    width: 25%;
+}
+#profile .menu button{
+    display: block;
+    margin: auto;
+    width: 90%;
+    border: none;
+    border-top: 1px solid #ccc;
+    font-size: 16pt;
+    padding: 15px 0px;
+    text-align: right;
+}
+#profile .menu:hover{
+    width: 60%;
+}

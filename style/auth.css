@@ -1,0 +1,77 @@
+@import "global.css";
+
+body {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgb(49, 56, 69);
+    width: 100%;
+    height: 100hv;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth {
+    width: 100%;
+    margin-top: 10%;
+    max-width: 500px;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0 3px 3px rgba(8, 112, 184, 0.7);
+}
+
+.titulo {
+    padding: 20px;
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    color: #333;
+}
+
+form {
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+.field {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 400px;
+    padding: 5px 10px;
+    padding-left: 30px;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+}
+.entrar{
+    display: block;
+    color: #333;
+    margin: 20px auto;
+    padding: 10px 25px;
+    border: 1px solid #CCC;
+    background-color: #EEE;
+    border-radius: 40px;
+}
+.entrar:hover{
+    border: 1px solid #34ADFF;
+    background-color: #34ADFF;
+    color: #FFF;
+}
+.toogle{
+    padding: 20px;
+    padding-top: 0px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.register{
+    display: none;
+    transition: 3s;
+
+}
+.toogle{
+    color: rgb(24, 24, 250);
+}
+.toogle:hover{
+    color: #9a9aff;
+}
