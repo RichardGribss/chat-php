@@ -1,3 +1,4 @@
+@import "global.css";
 #inbox{
     display: inline-block;
     vertical-align: top;
@@ -14,10 +15,10 @@
     display: inline-block;
     vertical-align: top;
     width: 25%;
-    box-shadow: 21px 10px 30px -37px rgba(0, 0, 0, 0.75);
+    box-shadow: -21px 10px 30px -37px rgba(0, 0, 0, 0.75);
 }
 .column{
-    height: 100hv;
+    height: 100vh;
 }
 .column p.title{
     font-weight: bold;
